@@ -1,4 +1,6 @@
 import React from 'react'
+import { Oicon } from '../icons/Oicon'
+import { Xicon } from '../icons/Xicon'
 
 export const Start = () => {
   return (
@@ -6,14 +8,13 @@ export const Start = () => {
 
     <div className='start_header'></div>
     <div className='card shadaw-gray'>
-     <h1 className='text-lg'> Pick players 1'S mark</h1>
+     <h1 className='text-lg'> wach a M3alam </h1>
      <div className='start__players'>
       <span className='start__players--active'>
-        x
-      </span>
-      <span>o</span>
+       <Xicon color={}/>      </span>
+      <span><Oicon /></span>
      </div>
-     <p className='text-light'>remember: x goes first</p>
+     <p className='text-light'>remember: x howa lawal</p>
     </div>
     <div className='start_btns'></div>
         <button className='btn btn-yellow'>new game (vs CPU) </button>
