@@ -12,8 +12,8 @@
     --color-yellow-dark: #cd8d16;
     --color-blue: #30c4be;
     --color-blue-dark:#128c89;
-
-    
+    --shadaw-y:6px
+    --shadaw-blue-dark: #128c89;
 }
 body{
     background-color: var(--color-bg-dark);
@@ -69,6 +69,49 @@ html{
 .text-yellow{
         color: var(--color-yellow);
 }
+.btn{
+    background: var(--color-gray);
+    border: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius:10px ;
+    color: var(--color-bg-light);
+    display: inline-block;
+    box-shadow:  0 6px 0 var(--color-bg-dark);
+    margin-bottom: 6px;
+
+}
+.btn:hover{
+    transform: translateY(-2px);
+    
+}
+.btn:active{
+    transform: translateY(4px);
+}
+.btn-yellow{
+    background-color: var(--color-yellow);
+    box-shadow: 0 6px 0 var(--color-yellow-dark);
+
+}
+.btn-blue{
+    background-color: var(--color-blue);
+    box-shadow: var(--color-blue-dark);
+    
+}
+.btn_sm{
+    --shadaw-y: 4px;
+}
+.btn-sm:hover{
+    --shadaw-y:6px;
+}
+.btn-sm:active{
+    --shadaw-y:3px;
+}
+
+
 
 /* START */
 .start{
