@@ -5,14 +5,17 @@ import { Xicon } from '../icons/Xicon'
 export const Start = () => {
   return (
     <div className='start'>
-
-    <div className='start_header'></div>
+ 
+    <div className='start__header'>
+    <Xicon />  
+    <Oicon />  
+    </div>
     <div className='card shadaw-gray'>
      <h1 className='text-lg'> wach a M3alam </h1>
      <div className='start__players'>
       <span className='start__players--active'>
-       <Xicon color={}/>      </span>
-      <span><Oicon /></span>
+       <Xicon color="dark"/>      </span>
+      <span><Oicon  color="light"/></span>
      </div>
      <p className='text-light'>remember: x howa lawal</p>
     </div>
