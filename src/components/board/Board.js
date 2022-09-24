@@ -1,7 +1,9 @@
 import React from 'react'
 import { Xicon } from '../icons/Xicon'
 import { Oicon } from '../icons/Oicon'
+import { CardBoard } from './CardBoard'
 export const Board = () => {
+  const squars = ["o","o","o","","x","x","x","",""]
   return (
     <div className='board' >
       <div className='board__header'>
@@ -32,8 +34,31 @@ export const Board = () => {
       </div>
      </div>
 
-      <div className='body'></div>
-      <div className='board__footer'></div>
+      <div className='board__body'>
+        {squars.map((sq,ix) => (
+          <CardBoard key={ix} index={ix} user={sq} active = {ix === 5} />
+        ))}
+      </div>
+      <div className='board__footer'>
+        <div className='card bg-blue'>
+          <p className='text-light'>
+                x(nta)
+          </p>
+          <strong className='text-2xl '>10</strong>
+        </div>
+        <div className='card bg-light'>
+          <p className='text-light'>
+                tar7
+          </p>
+          <strong className='text-2xl '>10</strong>
+        </div>
+        <div className='card bg-yellow'>
+          <p className='text-light'>
+                CPU
+          </p>
+          <strong className='text-2xl '>10</strong>
+        </div>
+      </div>
 
     </div>
   )
