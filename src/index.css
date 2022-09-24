@@ -173,3 +173,28 @@ html{
     background-color: var(--color-gray);
     box-shadow: 0 0 8px rgba(255,255,255,0.2);
 }
+
+/* BOARD */
+.board__header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 50px;
+}
+.board__turn{
+    border-radius: 5px;
+    background-color: var(--color-bg-light);
+    align-items: center;
+    padding: 8px 12px;
+    gap: 4px;
+}
+.board__reastart svg{
+height: 20px;
+display: flex;
+align-items: center;
+transform-origin: center;
+transition: all 0.3s;
+}
+.board__reastart:hover svg{
+    transform: rotate(180deg);
+}
