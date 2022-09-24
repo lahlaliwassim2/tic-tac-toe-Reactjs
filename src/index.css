@@ -198,3 +198,59 @@ transition: all 0.3s;
 .board__reastart:hover svg{
     transform: rotate(180deg);
 }
+.board__body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+
+}
+.board__body .card{
+    height: 120px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: inline 10px; ;
+}
+.board__body  .active.shadaw-blue{
+    background-color: var(--color-blue);
+}
+.board__body  .active.shadaw-yallow{
+    background-color: var(--color-yellow);
+}
+
+.shadaw-gray{
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.shadaw-blue{
+    box-shadow: 0 8px 0 var(--color-blue-dark);
+}
+.shadaw-yallow{
+    box-shadow: 0 8px 0  var(--color-yellow-dark);
+}
+.board__footer{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    gap: 20px;
+}
+.board__footer .card{
+    gap: 15px;
+}
+.bg-light{
+    background-color: var(--color-gray-dark);
+    color: var(--color-bg-dark);
+}
+.bg-blue{
+    background-color: var(--color-blue);
+    color: var(--color-bg-dark);
+
+}
+.bg-yellow{
+    background-color: var(--color-yellow);
+    color: var(--color-bg-dark);
+
+}
+.text-light{
+    
+}
