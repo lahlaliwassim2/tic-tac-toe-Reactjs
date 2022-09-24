@@ -1,4 +1,4 @@
-import {Start} from "./components/start/Start"
+// import {Start} from "./components/start/Start"
 import {Board} from "./components/board/Board"
 
 
