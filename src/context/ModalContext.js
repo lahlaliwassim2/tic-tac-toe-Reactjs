@@ -4,18 +4,22 @@ const ModalContext = createContext()
 
 const ModalState = (props)=>{
 
-        const [show , setShow] = useState(false)
-
+        const [show , setShow] = useState(true)
+        const [mode , setMode] = useState("winer")   //atkune ya winner || start
+ 
         const showModal = ()=> setShow(true)
         const hideModal = () => setShow(false)
         
 
     return (
-        <ModalContext.Provider value={
+        <ModalContext.Provider value={{
             show,
+            modalMode: mode,
+            setModalMode:setMode,
             showModal,
             hideModal
-        }>
+        }}
+        >
             {props.children}
         </ModalContext.Provider>
     )
